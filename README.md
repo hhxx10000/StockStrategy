@@ -1,5 +1,5 @@
 # StockStrategy
-git clone url
+- git clone url
 
 navigate to repository
 
