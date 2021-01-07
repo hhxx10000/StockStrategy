@@ -34,7 +34,7 @@ data = yf.download(  # or pdr.get_data_yahoo(...
         # proxy URL scheme use use when downloading?
         # (optional, default is None)
         proxy = None
-    )
+    )#MZ is a fish!!
 
 print(data.head())
 print(data['Open'][0])
