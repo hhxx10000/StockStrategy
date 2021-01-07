@@ -3,12 +3,12 @@ git clone url
 
 navigate to repository
 
-  git status
+  - git status
   
-  git add -A
+  - git add -A
   
-  git commit -m "message"
+  - git commit -m "message"
   
-  git push
+  - git push
 
-  git pull
+  - git pull
