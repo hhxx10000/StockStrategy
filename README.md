@@ -1,1 +1,1 @@
-# StockStrategy
+StockStrategy
