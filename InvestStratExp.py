@@ -1,0 +1,3 @@
+import LazyInvest
+
+LazyInvest.main()
