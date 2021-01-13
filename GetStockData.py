@@ -10,8 +10,10 @@ if __name__ == "__main__":
     endDate = "2020-12-31"
     StockInterval = "60m"
     data = GetStock(StockName, startDate, endDate, StockInterval)
-    FirstDate = data.index[0]
-    print(data.head(10))
+    print(data.iloc[0])
+    data.reset_index(inplace = True)
+
+    # print(type(data))
     # print(FirstDate)
     # print(FirstDate.year)
     # print(FirstDate.month)
