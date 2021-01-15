@@ -1,12 +1,12 @@
 import GetStockData
 
 # define stock strategy
-def BuyHold(StockData, OrigFund):
-    startPrice = StockData['Open'][0][0]
-    endPrice = StockData['Close'][-1][-1]
+def BuyHold(StockDate, StockData, OrigFund):
+    startPrice = StockData[0][0]['Open']
+    endPrice = StockData[-1][-1]['Close']
     return float(OrigFund)/startPrice*endPrice
 
-def LazyInvest(StockData, InitFund):
+def LazyInvest(StockDate, StockData, InitFund):
     # 懒人炒股心经：
     #   早上大跌要加仓
     #   早上大涨要减仓
@@ -14,10 +14,10 @@ def LazyInvest(StockData, InitFund):
     #   下午大跌次日买
     CurrCash = InitFund
     CurrStock = 0
-    TotalTime = len(StockData['Open'])
 
-    for iDay in range(TotalTime):
-        todayStock = 
+    yesterday_candles = []
+    for iDay, iDate in enumerate(StockDate):
+        todayStock = 1
     print(InitCash, InitStock, TotalTime)
 
 def is_morning_market_bearish(today_candles, percentage):

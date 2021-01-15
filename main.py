@@ -11,10 +11,10 @@ if __name__ == "__main__":
 
     InitFund = 100000
 
-    StockData = GetStockData.GetStockHrData(Ticker, StartDate, EndDate)
+    StockDate, StockData = GetStockData.GetStockHrData(Ticker, StartDate, EndDate)
 
     #buy and hold
-    FinalFund1 = StockStrtgy.BuyHold(StockData, InitFund)
+    FinalFund1 = StockStrtgy.BuyHold(StockDate, StockData, InitFund)
     print("Final Fund: {} dollars".format(FinalFund1))
     percentIncrease = ((FinalFund1 - InitFund) * 1.0 / InitFund) *100
     print("Percentage Increase: {:.2f}%".format(percentIncrease))
